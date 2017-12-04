@@ -1,0 +1,124 @@
+///////////
+// reset //
+///////////
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+///////////////////////
+// variables & bases //
+///////////////////////
+$primary: #000018;
+$secondary: #0000ff;
+$gray-dark: #656176;
+$gray-light: #DFE0E2;
+
+.transition { transition: all .2s ease; }
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+* { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    //font-size: 1.6rem;
+    line-height: 2rem;
+    color: $gray-dark;
+}
+
+a {
+    @extend .transition;
+    position: relative;
+    color: $secondary;
+    text-decoration: none;
+    
+    &:after {
+        @extend .transition;
+        content: '';
+        background-color: $secondary;
+        height: 2px;
+        width: 0;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+    
+    &:hover {
+        text-decoration: none;
+        
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 5rem;
+    font-weight: 100;
+}
+h2 {
+    font-size: 32px;
+    line-height: 3rem;
+}
+
+h5, h6 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
