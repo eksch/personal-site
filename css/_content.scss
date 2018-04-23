@@ -1,71 +1,64 @@
 body {
     background-color: $gray-light;
+    padding: 5%;
 }
 
 .page {
     
     .navigation {
-        position: fixed; 
+        position: fixed;
         display: none;
+        top: 0;
         z-index: 1;
-        width: 100%;
+        width: 90%;
         background-color: $primary;
         text-align: center;
         
         &__logo {
-            display: block;
-            width: 10px;
+            display: inline-block;
+            width: 5%;
+            height: 5%;
             margin: 10px auto;
+            
+            polygon { fill: $gray-dark; }
         }
         
         &__link {
-            color: #efe; 
-            text-decoration: none;
             display: inline-block;
             margin: 0 1em;
             font-weight: 400;
-            
-            &.active {
-                color: white;
-                background-color: rgba(0,0,0,0.3);
-            }
         }
   	}
     
     &__section {
         @extend .clearfix;
-        margin: 0 auto;
+        margin: 60px auto;
         padding: 60px;
+        background-color: $primary;
     }
     .header {
-        background-color: $primary;
-        color: $gray-light;
         text-align: center;
         padding: 10%;
-        
-        //a { color: #fff; }
         
         p {
             line-height: 3rem;
             font-weight: 200;
             font-size: 24px;
-            color: $gray-light;
+        }
+        
+        &__description {
+            margin: 60px 0;
         }
         
         &__me {
             border-radius: 50%;
-            width: 175px;
-            margin-bottom: 60px;
-        }
-        
-        &__logo {
-            width: 1%;
-            margin-bottom: 50px;
+            width: 80px;
         }
     }
     
     .work {
         padding: 0;
+        background-color: transparent;
         
         .project {
             @extend .clearfix;
@@ -73,7 +66,6 @@ body {
             display: block;
             box-sizing: border-box;
             padding: 60px 10%;
-            color: $primary;
             overflow: hidden;
             text-align: center;
                 
@@ -81,7 +73,7 @@ body {
                 content: '';
                 @extend .transition;
                 display: block;
-                background-color: $gray-light;
+                background-color: $primary;
                 opacity: 1;
                 position: absolute;
                 top: 0; left: 0;
@@ -127,8 +119,6 @@ body {
     
     .contact {
         text-align: center;
-        background-color: $primary;
-        h2, p { color: $gray-light; }
         
         .icon {
             display: inline-block;
@@ -137,16 +127,16 @@ body {
             
             svg {
                 @extend .transition;
-                border: 2px solid $gray-light;
+                border: 2px solid $secondary;
                 border-radius: 50%;
                 padding: 5px;
                 
-                path { fill: $gray-light; }
+                path { fill: $secondary; }
                 
                 &:hover {
-                    background-color: $gray-light;
+                    background-color: $secondary;
                     
-                    path { fill: $secondary; }
+                    path { fill: $gray-light; }
                 }
             }
             
@@ -159,8 +149,6 @@ body {
             @extend .transition;
             margin: 20px 0 0;
             font-size: .8rem;
-            
-            a { color: $gray-light; }
         }
     }
 }

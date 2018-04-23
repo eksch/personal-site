@@ -47,10 +47,10 @@ table {
 ///////////////////////
 // variables & bases //
 ///////////////////////
-$primary: #000018;
-$secondary: #0000ff;
-$gray-dark: #656176;
-$gray-light: #DFE0E2;
+$primary: #ffffff;
+$secondary: #37bbe4;
+$gray-dark: #35342f;
+$gray-light: #f1f2f0;
 
 .transition { transition: all .2s ease; }
 
@@ -63,9 +63,8 @@ $gray-light: #DFE0E2;
 }
 
 * { 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    //font-size: 1.6rem;
     line-height: 2rem;
     color: $gray-dark;
 }
@@ -95,25 +94,27 @@ a {
         }
     }
 }
+b {
+    font-weight: 700;
+}
 
 p {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1, h2 {
     margin: 0 0 10px;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 64px;
-    line-height: 5rem;
-    font-weight: 100;
+    font-size: 28px;
+    line-height: 2.5rem;
 }
 h2 {
-    font-size: 32px;
-    line-height: 3rem;
+    font-size: 24px;
+    line-height: 2rem;
 }
 
 h5, h6 {

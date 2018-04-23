@@ -3,8 +3,8 @@
     <head>
         <title>Elena Scherer | Project: AMSS Consulting</title>
         <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet" type="text/css">
-        <link href='css/styles.css' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+        <link href='../css/styles.css' rel='stylesheet' type='text/css' />
         
         <!--Google Analytics-->
         <script>
@@ -62,42 +62,39 @@
         <div class="page project">
             
             <div class="page__section header">
-                <a class="header__back-home-link" href="../index.html">&larr; back home</a>
-                <a href="../index.html"><img class="header__logo" src="images/logo.svg" /></a>
-                
+                <a href="../index.html"><svg class="header__logo" width="154" height="154" viewBox="0 0 154 154"><g fill="none"><polygon points="0 0 153.9 0 153.9 22 22 22 22 44 153.9 44 153.9 66 22 66 22 88 154 88 154 153.9 0 154 0 131.9 132 132 132 110 0 110"/></g></svg></a>
             </div>
             
             <div class="page__section project-details">
-                <h1>Disease Profiler</h1>
+                <h1>Healthcare &amp; insurance software: Disease Profiler</h1>
                     
                 <h5 class="project-info">Web Application</h5>
                 <h5 class="project-info">UX Design, Responsive web design, front end development</h5>
-                <p class="project-intro">A section of the first project I worked on was the Disease & Catastrophic Profiler. While the product it's a part of looks at general healthcare data and highlights anomalies and areas of high cost, the Profiler specifically shows prevalence of diseases in various demographics.</p>
+                <p class="project-intro">The Disease &amp; Catastrophic Profiler shows disease prevalence by demographic, part of a larger product for insurance companies who look at general healthcare data to highlight anomalies and high-cost areas.</p>
                 
-                <p>Joyously, we also were able to consider mobile first with this project.</p>
-                
-                <img class="half-size" src="images/DiseaseCatastrophicProfiles-Mobile-userflow.png">
+                <p>Joyously, we also were able to approach this project mobile-first. We built it fully responsive.</p>
 
-                <p>To start, we had to simplify how users chose the profiler they were looking at, Disease or Catastrophic. By putting this as the first step, instead of hurling the user into all the data and hoping they’d find what they needed, we eliminated confusion about where you were in the site and provided a clear path forward. </p>
+                <p>The existing product had no separation between the two data sets, relying on the user to figure out what they were looking at. We started there - users would choose which database they wanted to search in before seeing any data. Switching between datasets was made possible by a dropdown available at the top of the screen at all times.</p>
                 
                 
-                <p>After a profiler is selected, the user is presented with a search within that set of data. Since it’s a defined set, we made the results live-updating as the user typed. The categories and individual diseases below will filter away if they don’t match the term, or sequence of letters. </p>
+                <img src="../images/dmw-dp-category-flyout.jpg" class="half-size">
+                <img class="half-size" src="../images/profiler-details.png">
+                
+                <p>After a database is selected, the user then may search within that set of data for specific diseases and categories. Since it’s a defined set, we live-update the results as the user types.</p>
                 
                 
-                <p>If they know the category of what they're looking for, they can also click on that and see a list of diseases, or view an aggregate of all the data for diseases in that category. </p>
+                <p>If they know the category they're looking for, they can also select that to see a list of diseases, or view aggregate data for diseases in that category. </p>
+                
+                <p>On the details page, we needed to make the data describing the demographics of the disease easy to navigate and simple to understand. We added a jump navigation so the user could skip the scrolling and navigate right to the graph they needed. You can see the prototype for this below.</p>
                 
                 
-                <img src="images/dmw-dp-category-flyout.jpg" class="main-image">
+                <p data-height="479" data-theme-id="0" data-slug-hash="xwdOeK" data-default-tab="result" data-user="eksch" data-embed-version="2" data-pen-title="Jump menu with active class and smooth scroll" class="codepen">See the Pen <a href="https://codepen.io/eksch/pen/xwdOeK/">Jump menu with active class and smooth scroll</a> by Elena Scherer (<a href="https://codepen.io/eksch">@eksch</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 
-                <p>On the disease details page, we needed to make the data easy to navigate and simple to understand. We added a jump navigation so the user could see all the graphs available on the page without needing to scroll through them all, and navigate to the one they needed most. I used some simple Javascript to accomplish this, a Codepen prototype is below.</p>
                 
+                <img class="main-image" src="../images/DiseaseCatastrophicProfiles-Mobile-userflow.png">
                 
-                <p data-height="500" data-theme-id="0" data-slug-hash="xwdOeK" data-default-tab="result" data-user="eksch" class='codepen half-size'>See the Pen <a href='http://codepen.io/eksch/pen/xwdOeK/'>Jump menu with active class and smooth scroll</a> by Elena Scherer (<a href='http://codepen.io/eksch'>@eksch</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-                
-                <img class="main-image" src="images/profiler-details.png">
-                
-                <img class="main-image" src="images/DiseaseCatastrophicProfiles-Tablet-workflow.png" />
+                <img class="main-image" src="../images/DiseaseCatastrophicProfiles-Tablet-workflow.png" />
                 
             </div>
             
