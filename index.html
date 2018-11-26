@@ -22,19 +22,19 @@
         <script type="text/javascript">
             $(document).ready(function() {
               $('a[href*=#]').bind('click', function(e) {
-	   			e.preventDefault(); // prevent hard jump, the default behavior
-    
-	   			var target = $(this).attr("href"); // Set the target as variable
-    
-	   			// perform animated scrolling by getting top-position of target-element and set it as scroll target
-	   			$('html, body').stop().animate({
-	   					scrollTop: $(target).offset().top
-	   			}, 600, function() {
-	   					location.hash = target; //attach the hash (#jumptarget) to the pageurl
-	   			});
-    
-	   			return false;
-	   	      });
+                e.preventDefault(); // prevent hard jump, the default behavior
+                
+                var target = $(this).attr("href"); // Set the target as variable
+                
+                // perform animated scrolling by getting top-position of target-element and set it as scroll target
+                $('html, body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 600, function() {
+                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+                });
+                
+                return false;
+              });
             });
                 
             $(window).scroll(function() {
@@ -62,27 +62,27 @@
     <body>
         <div class="page">
             <nav class="navigation" id="mainNav">
-			 <!--<a class="navigation__link" href="#work">Work</a>-->
+                <!--<a class="navigation__link" href="#work">Work</a>-->
                 <a href="#top"><svg class="navigation__logo" width="154" height="154" viewBox="0 0 154 154"><g fill="none"><polygon points="0 0 153.9 0 153.9 22 22 22 22 44 153.9 44 153.9 66 22 66 22 88 154 88 154 153.9 0 154 0 131.9 132 132 132 110 0 110"/></g></svg></a>
-			     <!--<a class="navigation__link" href="#contact">Contact</a>-->
+                <!--<a class="navigation__link" href="#contact">Contact</a>-->
             </nav>
             
             <!--<a class="header-about-link" href="/about.html"></a>-->
             <div id="top" class="page__section header">
                 <img class="header__me" src="images/scherer.png" />
                 
-                <h1 class="header__description">Elena Scherer is a product designer &amp; front-end developer currently living in Amsterdam, designing for Booking.com.</h1>
+                <h1 class="header__description">I'm Elena, a product designer currently living in Amsterdam. Previously at Booking.com, I'm now leading product and design for <a href="https://scrapconnection.com/">a small startup</a> that aims to eliminate fraud in the scrap trade.</h1>
                 
                 <p>
-                     <a class="navigation__link" href="#work">Work</a>
-			         <a class="navigation__link" href="#contact">Contact</a>
+                    <a class="navigation__link" href="#work">Work</a>
+                    <a class="navigation__link" href="#contact">Contact</a>
                 </p>
                 
                 
                 <!--<p>From defining requirements, interviewing users, and visualizing the experience, to information architecture and front end development, I'm refining every skill I can.</p>
                 
                 <p>Outside my day job, you'll find me painting, playing with type, making music, or wandering around Europe. </p>-->
-            </div>            
+            </div>
             
             <div id="work" class="page__section work">
                 <div class="project">

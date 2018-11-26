@@ -28,7 +28,7 @@ body {
             margin: 0 1em;
             font-weight: 400;
         }
-  	}
+    }
     
     &__section {
         @extend .clearfix;
@@ -51,8 +51,8 @@ body {
         }
         
         &__me {
-            border-radius: 50%;
-            width: 80px;
+            border-radius: 20px;
+            width: 150px;
         }
     }
     
