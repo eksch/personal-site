@@ -1,9 +1,10 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Elena Scherer - Designer &amp; Front End Developer</title>
+        <title>Elena Scherer / Designer</title>
         <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vampiro+One" rel="stylesheet">
         <link href='css/styles.css' rel='stylesheet' type='text/css' />
         
         <!--Google Analytics-->
@@ -41,11 +42,11 @@
                 var scrollDistance = $(window).scrollTop();
                 
                 // Show/hide menu on scroll
-                if (scrollDistance > 500) {
-                    $('nav').fadeIn("fast");
-                } else {
-                    $('nav').fadeOut("fast");
-                }
+                //if (scrollDistance > 500) {
+                //    $('nav').fadeIn("fast");
+                //} else {
+                //    $('nav').fadeOut("fast");
+                //}
                 
                 // Assign active class to nav links while scolling
                 $('.page-section').each(function(i) {
@@ -59,24 +60,25 @@
         </script>
     </head>
     
-    <body>
+    <body id="top">
         <div class="page">
             <nav class="navigation" id="mainNav">
-                <!--<a class="navigation__link" href="#work">Work</a>-->
                 <a href="#top"><svg class="navigation__logo" width="154" height="154" viewBox="0 0 154 154"><g fill="none"><polygon points="0 0 153.9 0 153.9 22 22 22 22 44 153.9 44 153.9 66 22 66 22 88 154 88 154 153.9 0 154 0 131.9 132 132 132 110 0 110"/></g></svg></a>
-                <!--<a class="navigation__link" href="#contact">Contact</a>-->
+                <!--<a class="navigation__link" href="#work">Work</a>-->
+                <!--<a class="navigation__link" href="html/about.html">About</a>-->
+                <a class="navigation__link" href="#contact">Contact</a>
             </nav>
             
-            <!--<a class="header-about-link" href="/about.html"></a>-->
-            <div id="top" class="page__section header">
-                <img class="header__me" src="images/scherer.png" />
+            <div class="page__section header">
                 
-                <h1 class="header__description">I'm Elena, a product designer currently living in Amsterdam. Previously at Booking.com, I'm now leading product and design for <a href="https://scrapconnection.com/">a small startup</a> that aims to eliminate fraud in the scrap trade.</h1>
+                <h1 class="header__description">I'm Elena, a product designer based in Amsterdam.</h1>
                 
-                <p>
-                    <a class="navigation__link" href="#work">Work</a>
-                    <a class="navigation__link" href="#contact">Contact</a>
-                </p>
+                <h2>I lead product and design for <a href="https://scrapconnection.com/">a small but mighty startup</a> that aims to eliminate fraud in the scrap trade.</h2>
+                
+                <h2>Previously, I led a team at <a href="https://www.booking.com">Booking.com</a>, where I helped launch flights; and was the first UX designer at <a href="https://www.zywave.com">Zywave</a>.</h2>
+                
+                <p><a href="html/about.html">More about me &rarr;</a></p>
+                <p><a  href="https://drive.google.com/file/d/0B7ALJFWxxlJiTHBnYXRyNXNvZTg/view">View my resum&eacute; &rarr;</a>.</p>
                 
                 
                 <!--<p>From defining requirements, interviewing users, and visualizing the experience, to information architecture and front end development, I'm refining every skill I can.</p>
@@ -84,49 +86,64 @@
                 <p>Outside my day job, you'll find me painting, playing with type, making music, or wandering around Europe. </p>-->
             </div>
             
+                 
+            
             <div id="work" class="page__section work">
                 <div class="project">
-                    <img class="project__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/cb3a1440330741.577b785c2718b.jpg" />
-                    <h2 class="project__name">
-                        <a class="project__link" href="https://www.behance.net/gallery/40330741/Bookingcom-Tech-Day-Event-Branding">Booking.com Tech Day</a></h2>
-                    <h5 class="project__skills">Branding</h5>
-                    <!--<p class="project__description">During a 2-day hackathon, <a href="http://filip.lysyszyn.pl/">Filip</a> and I created branding for an internal Booking.com Tech Day event.</p>-->
+                    <img class="project__image" src="images/DiseaseCatastrophicProfiles-Mobile-userflow.png" />
+                    <h3 class="project__name"><a class="project__link" href="html/profiler.html">Company Profile &amp; Reports</a></h3>
+                    <h5 class="project__skills">Product Management, UX Design</h5>
                 </div>
-                <div class="project">
-                    <img class="project__image" src="images/marketing-visual-language-02.png" />
-                    <h2 class="project__name">
-                        <a class="project__link" href="https://medium.com/@elena_scherer/design-is-not-magic-654756c942a7">Design is Not Magic</a></h2>
-                    <h5 class="project__skills">Writing</h5>
-                    <!--<p class="project__description">During a 2-day hackathon, <a href="http://filip.lysyszyn.pl/">Filip</a> and I created branding for an internal Booking.com Tech Day event.</p>-->
-                </div>
-                <div class="project">
-                    <img class="project__image" src="https://d13yacurqjgara.cloudfront.net/users/538939/screenshots/2185989/happy.png" />
-                    <h2 class="project__name"><a class="project__link" href="http://www.happylittleipsum.com/">Happy Little Ipsum</a></h2>
-                    <h5 class="project__skills">Side project</h5>
-                    <!--<p class="project__description">Need some uplifting text to fill out your mockup or prototype, or just want some good ol' Bob Ross quotes? <a href="http://www.danielcreid.com/">Daniel</a>, <a href="https://cmegown.com/">Corey</a> and I have you covered.</p>-->
-                </div>
-                <div class="project">
-                    <img class="project__image" src="images/amss-site.png" />
-                    <h2 class="project__name"><a class="project__link" href="html/amss.html">AMSS Consulting</a></h2>
-                    <h5 class="project__skills">Visual design, Responsive web design, front end development</h5>
-                    <!--<p class="project__description">As the primary designer on this project, I created a fully responsive website for AMSS.</p>-->
-                </div>
-                    
                 
                 <div class="project">
                     <img class="project__image" src="images/DiseaseCatastrophicProfiles-Mobile-userflow.png" />
-                    <h2 class="project__name"><a class="project__link" href="html/profiler.html">Disease Profiler</a></h2>
-                    <h5 class="project__skills">UX Design, Responsive Web Design, Front End Development</h5>
-                    <!--<p class="project__description">A data-driven web application that needed a workflow redesign.</p>-->
+                    <h3 class="project__name"><a class="project__link" href="html/profiler.html">Flight search</a></h3>
+                    <h5 class="project__skills">UX Design, Front End Development</h5>
                 </div>
                 
                 <div class="project">
+                    <img class="project__image" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/cb3a1440330741.577b785c2718b.jpg" />
+                    <h3 class="project__name">
+                        <a class="project__link" href="https://www.behance.net/gallery/40330741/Bookingcom-Tech-Day-Event-Branding">Booking.com Tech Day</a></h3>
+                    <h5 class="project__skills">Branding</h5>
+                    <!--<p class="project__description">During a 2-day hackathon, <a href="http://filip.lysyszyn.pl/">Filip</a> and I created branding for an internal Booking.com Tech Day event.</p>-->
+                </div>
+                
+                <div class="project">
+                    <img class="project__image" src="images/marketing-visual-language-02.png" />
+                    <h3 class="project__name">
+                        <a class="project__link" href="https://medium.com/@elena_scherer/design-is-not-magic-654756c942a7">Design is Not Magic</a></h3>
+                    <h5 class="project__skills">Writing</h5>
+                </div>
+                
+                <div class="project">
+                    <img class="project__image" src="https://cdn.dribbble.com/users/538939/screenshots/2185989/happy.png" />
+                    <h3 class="project__name"><a class="project__link" href="http://www.happylittleipsum.com/">Happy Little Ipsum</a></h3>
+                    <h5 class="project__skills">Lettering</h5>
+                    <!--<p class="project__description">Need some uplifting text to fill out your mockup or prototype, or just want some good ol' Bob Ross quotes? <a href="http://www.danielcreid.com/">Daniel</a>, <a href="https://cmegown.com/">Corey</a> and I have you covered.</p>-->
+                </div>
+
+                <div class="project">
+                    <img class="project__image" src="images/amss-site.png" />
+                    <h3 class="project__name"><a class="project__link" href="html/amss.html">AMSS Consulting</a></h3>
+                    <h5 class="project__skills">Visual design, Front end development</h5>
+                    <!--<p class="project__description">As the primary designer on this project, I created a fully responsive website for AMSS.</p>-->
+                </div>
+
+                <div class="project">
+                    <img class="project__image" src="images/DiseaseCatastrophicProfiles-Mobile-userflow.png" />
+                    <h3 class="project__name"><a class="project__link" href="html/profiler.html">Disease Profiler</a></h3>
+                    <h5 class="project__skills">UX Design, Front End Development</h5>
+                    <!--<p class="project__description">A data-driven web application that needed a workflow redesign.</p>-->
+                </div>
+
+                <div class="project">
                     <img class="project__image" src="images/icon-set_Page_2.png" />
-                    <h2 class="project__name"><a class="project__link" href="html/icons.html">Icons</a></h2>
+                    <h3 class="project__name"><a class="project__link" href="html/icons.html">Icons</a></h3>
                     <h5 class="project__skills">Visual design</h5>
                     <!--<p class="project__description">I created this set to be used in mockups and wireframes, and then implemented them as an icon font for web use.</p>-->
                 </div>
-                
+
                 <!--<div class="project">
                     <img class="project__image" src="dohmen-1.gif" />
                     <h2 class="project__name">Intranet videos</h2>
@@ -137,13 +154,13 @@
                 
                 <div class="project">
                     <img class="project__image" src="images/saga-poster.jpg" />
-                    <h2 class="project__name"><a class="project__link" href="html/saga.html">Saga Art &amp; Literary Magazine</a></h2>
-                    <h5 class="project__skills">Print design, preflight, poster design</h5>
+                    <h3 class="project__name"><a class="project__link" href="html/saga.html">Saga Art &amp; Literary Magazine</a></h3>
+                    <h5 class="project__skills">Print</h5>
                     <!--<p class="project__description">As the magazine's production editor, I designed the layout and typography, and created a poster to advertise for the upcoming issue.</p>-->
                 </div>
                 <div class="project">
                     <img class="project__image" src="images/illustration1.png" />
-                    <h2 class="project__name"><a class="project__link" href="https://www.behance.net/gallery/26284927/Portraits">Paintings</a></h2>
+                    <h3 class="project__name"><a class="project__link" href="https://www.behance.net/gallery/26284927/Portraits">Paintings</a></h3>
                     <h5 class="project__skills">Miscellaneous</h5>
                     <!--<p class="project__description">I like to paint digital portraits. I showcased a few at RAW Artists Milwaukee.</p>-->
                 </div>
@@ -162,10 +179,10 @@
                 
                 <a href="mailto:elenascherer23@gmail.com" class="icon email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a>
                 
-                                <p class="footer-text"><a  href="https://drive.google.com/file/d/0B7ALJFWxxlJiTHBnYXRyNXNvZTg/view">View my resum&eacute;</a></p>                
+                                
                 
-                <p class="footer-text">This site is hand-coded and maintained by Elena Scherer. All content is her own, unless otherwise stated.</p>
+                <p class="footer-text">&copy; 2019 Elena Scherer</p>
             </div>
         </div>
-    </body>    
+    </body>
 </html>
