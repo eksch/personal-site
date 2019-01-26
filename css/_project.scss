@@ -1,35 +1,27 @@
 .project {
-    .header {
-        height: 60px;
-        padding: 20px;
-        
-        &__logo {
-            width: 60px;
-            height: 60px;
-            polygon { fill: $gray-dark; }
-        }
-    }
     
     .project-details {
         
-        .project-info { color: $gray-dark; }
-        
-        .main-image { 
-            width: 100%;
-            margin: 40px 0;
+        .project-info {
+            margin-bottom: 30px;
+            color: $gray-dark;
         }
         
-        .half-size {
+        .main-image {
+            width: 100%;
+            margin: 40px 0;
+            border-radius: $border-radius;
+        }
+        
+        .secondary-image {
             margin: 0 30px 30px 0;
-            width: 50%;
+            border-radius: $border-radius;
             float: left;
-            
+            &__half { width: 50%; }
+            &__third { width: 33%; }
             &--right {
                 float: right;
                 margin: 0 0 30px 30px;
-            }
-            &.flush {
-                margin: 0;
             }
         }
         

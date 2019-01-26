@@ -51,7 +51,6 @@ $primary: #ffffff;
 $secondary: #0032ff;
 $gray-dark: #35342f;
 $gray-light: #f1f2f0;
-
 $border-radius: 10px;
 
 .transition { transition: all .2s ease; }
@@ -72,11 +71,11 @@ $border-radius: 10px;
 }
 
 a {
-    @extend .transition;
     position: relative;
     color: $secondary;
     font-weight: bold;
     text-decoration: none;
+    line-height: inherit;
     
     &:after {
         @extend .transition;
@@ -112,7 +111,8 @@ b {
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 h1 {
@@ -122,8 +122,9 @@ h1 {
     line-height: 44px;
 }
 h2 {
-    font-size: 18px;
     margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 34px;
 }
 
 h5, h6 {
