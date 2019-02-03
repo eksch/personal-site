@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <title>Elena Scherer | Project: Icons</title>
+        <title>Elena Scherer | Flight Search</title>
         <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
@@ -70,21 +70,109 @@
             </nav>
             
             <div class="page__section project-details">
-                <h1>Icons</h1>
+                <h1>Flight Search</h1>
+                <!--<h5 class="project-info">Visual design, Iconography</h5>-->
+                <figure class="image image__third image--right">
+                    <img src="../images/result_experiment.png" />
+                    <figcaption>An early idea for showing flight time</figcaption>
+                </figure>
+                <p>Booking.com is well-known for its hotel search. As the company decided to branch out and build products to fill the rest of people's time while traveling, I began leading the team that developed flight search.</p>
                 
-                <figure class="image image__third"><img src="https://m2.behance.net/rendition/pm/26413197/max_1200/a491aa132351aa17e47df960be67600e.jpeg" /></figure>
-                <h2>Problem</h2>
-                <p>Our design team needed our own set of icons to fit our needs, specifically &mdash; insurance software. We'd been using <a href="https://icomoon.io/">Icomoon's</a> free icon fonts, but our specific use case &mdash; insurance software &mdash meant there were several icons we needed that weren't included in the free set. Additionally, we required filled and outlined versions of many icons to allow for interaction in our products.</p>
+                <h2>Initial research</h2>
+                <p>We sought to understand how people researched and purchased a flight, to then tailor our search experience to what they expected.</p>
+                <p>We conducted several rounds of user testing, including street testing, internal and external surveys, testing with customer service executives, and finally, testing a prototype and live site with users.</p>
+                <p>In initial surveys, we asked a slew of questions based on the last flight they booked: which research tools (if any) they used, how they began their search, if their dates were flexible (and if they stuck to their original dates), etc.</p>
+                            
+                <p>We had a few key discoveries from our research. These themes surfaced no matter who we asked about their search process:
+                    <ul>
+                        <li>Flights are <b>usually booked first</b> when planning a trip. We tucked this information away for later, when we planned to work on travel packages.</li>
+                        <li>Travelers <b>prefer to book flights directly</b> with the airline.</li>
+                        <li>The top three decision-making factors were:
+                            <ol>
+                                <li>Price</li>
+                                <li>Number of stops (direct flights preferred)</li>
+                                <li>Departure time (not everyone likes early-morning treks to the airport!)</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </p>
+            
+                <p>One thing that surprised me personally was that many travelers had <b>little familiarity with airport codes</b>. These are everywhere in flight searches, especially on mobile web and apps.</p>
+            
+                <p>I made sure any attempt to shorten the airport name was accompanied with the expanded airport name in some way.</p>
+            
+                <figure class="image image__full">
+                    <img src="../images/airportcode_widget.png" />
+                    <figcaption>Did you know that Toronto's airport code is YYZ?</figcaption>
+                </figure>
+            
+                <figure class="image image__full">
+                    <img src="../images/flightsearch_autocomplete.png"  />
+                    <figcaption>The autocomplete dropdown for the searchbox had the airport code <i>and</i> the full airport name</figcaption>
+                </figure>
                 
-                <h2>Process</h2>
-                <p>I determined which icons we used most frequently, and researched which icons were standard in most icon sets. I designed on a 64-pixel base.</p>
+                <h2>Prototype #1: Building your trip</h2>
+                <p>Based on initial responses to our surveys, we built a prototype and began putting it in front of users. Initially, we allowed users to select flights one at a time, instead of overloading them with the round trip information right away.</p>
                 
-                <figure class="image image__third image--right"><img src="../images/icon-process.png" /></figure>
+                <figure class="image image__full">
+                    <img src="../images/flight-animation.gif" />
+                    <figcaption>Showing details for one leg of the flight</figcaption>
+                </figure>
+                
+                <figure class="image image__full">
+                    <img src="../images/mobiledeets.gif" />
+                    <figcaption>Mobile interaction for a multi-stop flight leg</figcaption>
+                </figure>
+                <p>The priority order of the search result filters was based on what people said their deciding factors were. Often, they would check the "Non-Stop" filter immediately after searching, and then order by price.</p>
+                <figure class="image image__full">
+                    <img src="../images/onebyone_outboundselect.png" class="main-image" />
+                    <figcaption>Select an outbound flight. </figcaption>
+                </figure>
+                <figure class="image image__full">
+                    <img src="../images/onebyone_returnselect.png" class="main-image" />
+                    <figcaption>Select a return flight</figcaption>
+                </figure>
+                <p>Once they'd selected both their outgoing and return flights, we showed a summary of their entire itinerary, with a link to book the flight.</p>
+            
+                <figure class="image image__full">
+                    <img src="../images/onebyone_summary.png" class="main-image" />
+                    <figcaption>Route summary before booking</figcaption>
+                </figure>
+            
+                <p>We ran tests with customers using this prototype, to see if they understood the process of building their flight itinerary one flight at a time.</p>
+                <p>While many of the younger participants picked up on the pattern quickly, and liked that you could see which parts of the trip were more expensive, most users overall found it too "jumpy" &mdash; if you wanted to change your flight, you had to go back to previous screens and redo your trip build.</p>
+            
+                <h2>Prototype #2: Choose a round trip</h2>
+                <p>From our initial research, we had discovered that many people used Skyscanner to research prices and available flights. It's possible that since they were used to that interface, they wanted to see the price of the whole trip in one go.</p>
+                <p>So, I built a new design for selecting a round trip, all at once.</p>
+                <figure class="image image__full">
+                    <img src="../images/roundtrip_results.png" class="main-image" />
+                    <figcaption>Search results with full return trips</figcaption>
+                </figure>
+                <p>Another detail I had to design for in this new format was the possibility that an airline could have multiple flight times available for a particular route.</p>
+                <p>For example, KLM has quite a few flights from Amsterdam to London daily &mdash; instead of showing a ton of results with every possible combination, a selector to switch between available flight times would allow more itinerary customization without breaking the familiar pattern of the roundtrip search result.</p>
+                <figure class="image image__full">
+                    <img src="../images/result_multipletimes2.png" class="main-image" />
+                    <figcaption>When showing the full return trip itinerary on a search result item, </figcaption>
+                </figure>
+                <figure class="image image__full">
+                    <img src="../images/result_return_expanded_multipletimes.png" class="main-image" />
+                    <figcaption>Expanded return itinerary with multiple flight time options</figcaption>
+                </figure>
+                
+                <p>Since we'd be linking to our partners' websites for the users to complete their transactions, we had to make it clear where they'd be heading when they clicked book.</p>
+                <figure class="image image__full">
+                    <img src="../images/bookroute_external_multiple.png" class="main-image" />
+                    <figcaption>Allow price comparison before redirecting to a partner to book</figcaption>
+                </figure>
+                
+                
                 
                 <h2>Result</h2>
-                <p>Custom icons decreased the need to design new icons by accounting for our products' specific needs.</p>
-                <p>I've also documented these icons on <a href="https://www.behance.net/gallery/25480913/Icon-set-Lite-Expanded"> Behance</a>.</p>
-                <figure class="image image__full"><img src="../images/icon-set_Page_2.png" /></figure>
+                <p>While you can't see this solution implemented on Booking.com anymore, I learned a ton while working on and building this project.</p>
+                <p>Despite any or all efforts, a personal preference for how something should work may creep in to a design. In this project, my personal love of airport codes and building my own trip was not the way that most people preferred to find their flights.</p>
+                <p>Eventually, through research, testing, and iteration, I was able to filter out my bias and put the product into context, and truly build something people want.</p>
+                <p></p>
             </div>
             
             <div id="contact" class="page__section contact">
