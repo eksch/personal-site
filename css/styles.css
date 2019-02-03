@@ -183,35 +183,38 @@ body {
     .page .work .project__name {
       font-size: 24px;
       margin: 20px 0; }
-/* line 127, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+    /* line 119, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+    .page .work .project__type, .page .work .project__skills, .page .work .project__description {
+      color: #aaa; }
+/* line 128, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
 .page .contact > div {
   box-sizing: border-box;
   width: 50%;
   display: inline-block;
   float: left; }
-/* line 134, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+/* line 135, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
 .page .contact .icon {
   display: inline-block;
   width: 40px;
   margin-right: 15px; }
-  /* line 139, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+  /* line 140, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
   .page .contact .icon svg {
     border: 2px solid #0032ff;
     border-radius: 50%;
     padding: 5px; }
-    /* line 145, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+    /* line 146, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
     .page .contact .icon svg path {
       fill: #0032ff; }
-    /* line 147, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+    /* line 148, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
     .page .contact .icon svg:hover {
       background-color: #0032ff; }
-      /* line 150, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+      /* line 151, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
       .page .contact .icon svg:hover path {
         fill: #f1f2f0; }
-  /* line 155, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+  /* line 156, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
   .page .contact .icon:hover:after {
     width: 0; }
-/* line 159, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
+/* line 160, /Users/elenascherer/Documents/GitHub/personal-site/css/content */
 .page .contact .footer-text {
   margin: 10px 0 0;
   font-size: 0.8rem; }
