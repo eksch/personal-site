@@ -51,67 +51,48 @@ body {
     }
     
     .work {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
         padding: 0;
         background-color: transparent;
         
         .project {
             @extend .clearfix;
             position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
             box-sizing: border-box;
             overflow: hidden;
             //flex-basis: 100%;
-            min-width: 300px;
-            max-width: 600px;
-            min-height: 200px;
+            //min-width: 300px;
+            //max-width: 600px;
+            //min-height: 200px;
             //max-height: 400px;
             margin-bottom: 30px;
             border-radius: $border-radius;
             padding: 30px;
             background-color: $primary;
-                
-            //&:before {
-            //    content: '';
-            //    @extend .transition;
-            //    display: block;
-            //    background-color: $primary;
-            //    opacity: 1;
-            //    position: absolute;
-            //    top: 0; left: 0;
-            //    width: 101%; height: 101%;
-            //    z-index: -1;
-            //}
-            
-            //&:hover {
-            //    &:before {
-            //        opacity: 0.9;
-            //    }
-            //}
             
             &__image {
                 @extend .transition;
                 width: 100%;
-                min-height: 200px;
-                min-width: 300px;
+                min-height: 66px;
+                min-width: 100px;
+                max-height: 400px;
+                max-width: 600px;
                 border-radius: $border-radius;
-                //-webkit-filter: grayscale(1);
-                //filter: grayscale(1);
-                //opacity: .3;
             }
-            //&:hover {
-            //    .project__image {
-            //        -webkit-filter: grayscale(0);
-            //        filter: grayscale(0);
-            //        opacity: 1;
-            //    }
-            //}
             &__name {
                 font-size: 24px;
-                margin: 20px 0;
+                margin-bottom: 20px;
+            }
+            
+            &__information {
+                padding: 30px;
+                vertical-align: middle;
+                width: 80%;
+                flex-grow: 2;
             }
             
             &__type,
