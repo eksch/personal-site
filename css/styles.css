@@ -165,7 +165,6 @@ body {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    flex-basis: 48%;
     min-width: 300px;
     max-width: 600px;
     min-height: 200px;
