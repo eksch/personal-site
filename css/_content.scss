@@ -1,6 +1,6 @@
 body {
     background-color: $gray-light;
-    padding: 5%;
+    padding: 5% 10%;
 }
 
 .page {
@@ -13,10 +13,9 @@ body {
         justify-content: space-between;
         top: 0;
         z-index: 1;
-        width: 90%;
-        border-radius: 0 0 $border-radius $border-radius;
-        padding: 20px 5% 10px;
-        background-color: $primary;
+        width: 80%;
+        padding: 20px 0 10px;
+        background-color: $gray-light;
         
         &__logo {
             width: 32px;
@@ -44,10 +43,10 @@ body {
     
     &__section {
         @extend .clearfix;
-        margin: 60px auto;
-        border-radius: $border-radius;
+        margin: 10% auto;
+        //border-radius: $border-radius;
         padding: 5%;
-        background-color: $primary;
+        //background-color: $primary;
     }
     
     .work {
@@ -69,9 +68,7 @@ body {
             //max-width: 600px;
             //min-height: 200px;
             //max-height: 400px;
-            margin-bottom: 30px;
-            border-radius: $border-radius;
-            padding: 30px;
+            margin-bottom: 10%;
             background-color: $primary;
             
             &__image {
@@ -81,24 +78,25 @@ body {
                 min-width: 100px;
                 max-height: 400px;
                 max-width: 600px;
-                border-radius: $border-radius;
             }
             &__name {
-                font-size: 24px;
-                margin-bottom: 20px;
             }
             
             &__information {
-                padding: 30px;
+                padding: 5%;
                 vertical-align: middle;
                 width: 80%;
                 flex-grow: 2;
+            }
+            &__action {
+                border: 2px solid $secondary;
+                padding: 15px;
+                display: inline-block;
             }
             
             &__type,
             &__skills,
             &__description {
-                color: $gray-mid;
             }
             
         }
