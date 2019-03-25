@@ -52,6 +52,7 @@ $secondary: #0032ff;
 $gray-dark: #35342f;
 $gray-mid: #aaa;
 $gray-light: #f1f2f0;
+$highlight: #ffff00;
 $border-radius: 10px;
 
 .transition { transition: all .2s ease; }
@@ -81,11 +82,11 @@ a {
     &:after {
         @extend .transition;
         content: '';
-        background-color: $secondary;
-        height: 3px;
+        background-color: $highlight;
+        height: 8px;
         width: 0;
         position: absolute;
-        bottom: -5px;
+        bottom: -2px;
         left: 0;
     }
     
