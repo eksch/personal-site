@@ -83,18 +83,19 @@ a {
         @extend .transition;
         content: '';
         background-color: $highlight;
-        height: 8px;
+        height: 11px;
         width: 0;
         position: absolute;
-        bottom: -2px;
-        left: 0;
+        bottom: 0;
+        left: -2px;
+        z-index: -1;
     }
     
     &:hover {
         text-decoration: none;
         
         &:after {
-            width: 100%;
+            width: 105%;
         }
     }
     &:active, &:focus {
