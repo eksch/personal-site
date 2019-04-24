@@ -45,17 +45,63 @@ body {
         @extend .clearfix;
         margin: 10% auto;
         padding: 5% 0;
-        //border-radius: $border-radius;
-        //background-color: $primary;
     }
     
     .work {
         padding: 0;
         background-color: transparent;
         
+        input[type='radio'] {
+            display: none;
+            
+            + label {
+                display: inline-block;
+                color: $secondary;
+                padding: 15px 30px;
+                border: 2px solid $secondary;
+            }
+            
+            &:checked + label {
+                font-weight: 700;
+                background-color: $secondary;
+                color: $primary;
+            }
+        }
+
+        #everything:checked {
+            ~ .project {
+                opacity: 1;
+            }
+        }
+        #ux:checked {
+            ~.project:not(.ux) {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+            }
+        }
+        #branding:checked {
+            ~.project:not(.branding) {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+            }
+            
+        }
+        #side:checked {
+            ~.project:not(.side) {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+            }
+        }
+        
         .project {
             @extend .clearfix;
+            @extend .transition;
+            transition: max-height .2s ease-in-out .5s;
             position: relative;
+            max-height: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -63,11 +109,6 @@ body {
             justify-content: space-between;
             box-sizing: border-box;
             overflow: hidden;
-            //flex-basis: 100%;
-            //min-width: 300px;
-            //max-width: 600px;
-            //min-height: 200px;
-            //max-height: 400px;
             margin-bottom: 10%;
             background-color: $primary;
             
