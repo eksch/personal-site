@@ -1,5 +1,4 @@
 body {
-    background-color: $gray-light;
     padding: 5% 10%;
 }
 
@@ -15,7 +14,7 @@ body {
         z-index: 1;
         width: 80%;
         padding: 20px 0 10px;
-        background-color: $gray-light;
+        background-color: white;
         
         &__logo {
             width: 32px;
@@ -43,7 +42,7 @@ body {
     
     &__section {
         @extend .clearfix;
-        margin: 10% auto;
+        margin: 0 auto;
         padding: 5% 0;
     }
     
@@ -128,11 +127,6 @@ body {
                 vertical-align: middle;
                 width: 80%;
                 flex-grow: 2;
-            }
-            &__action {
-                border: 2px solid $secondary;
-                padding: 15px;
-                display: inline-block;
             }
             
             &__type,

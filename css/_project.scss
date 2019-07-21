@@ -1,8 +1,6 @@
 .project {
     
     .project-details {
-        padding: 5%;
-        background-color: $primary;
         
         .project-info {
             margin-bottom: 30px;
@@ -47,6 +45,43 @@
             font-size: 18px;
             line-height: 2rem;
             margin: 30px 0;
+        }
+    }
+}
+.contact {
+    &__section {
+        width: 50%;
+        float: left;
+        padding-right: 24px;
+        box-sizing: border-box;
+    }
+    .form {
+        &__group{}
+        &__item {
+            position: relative;
+            margin-bottom:-1px;
+        }
+        &__label {
+            position: absolute;
+            top: 12px;
+            left: 16px;
+            font-size: 12px;
+            color: $gray-mid;
+        }
+        &__field {
+            @extend .transition;
+            border: 1px solid $gray-mid;
+            padding: 32px 16px 16px;
+            width: 100%;
+            font-size: 16px;
+            
+            &:focus {
+                outline: 0;
+                border-color: $secondary;
+                ~ label {
+                    color: $secondary;
+                }
+            }
         }
     }
 }
