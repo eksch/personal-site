@@ -37,7 +37,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.transition, a:after, .page .work .project, .page .work .project__image, .page .contact .icon svg, .page .contact .footer-text, .contact .form__field {
+.transition, a:after, .button, .page .work input[type='radio'] + label, .page .work .project, .page .work .project__image, .page .contact .icon svg, .page .contact .footer-text, .contact .form__field {
   transition: all .2s ease; }
 
 .clearfix:after, .page__section:after, .page .work .project:after {
@@ -46,7 +46,7 @@ table {
   clear: both; }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   color: #35342f; }
 
@@ -76,15 +76,17 @@ a {
       background-color: #001466;
       width: 100%; }
 
-.button {
+.button, .page .work input[type='radio'] + label {
   border: 2px solid #0032ff;
   padding: 16px;
   display: inline-block;
   color: #0032ff;
-  font-weight: 700; }
+  font-weight: 900; }
+  .button:hover, .page .work input[type='radio'] + label:hover {
+    background-color: #ccd6ff; }
 
 b {
-  font-weight: 700; }
+  font-weight: 900; }
 
 p {
   margin-bottom: 30px;
@@ -93,14 +95,14 @@ p {
 
 h1 {
   margin-bottom: 30px;
-  font-family: 'Yeseva One', serif;
   font-size: 54px;
+  font-weight: 900;
   line-height: 66px; }
 
 h2 {
   margin-bottom: 20px;
-  font-family: 'Yeseva One', serif;
   font-size: 32px;
+  font-weight: 900;
   line-height: 44px; }
 
 h5, h6 {
@@ -139,38 +141,37 @@ body {
 
 .page__section {
   margin: 0 auto;
-  padding: 5% 0; }
+  padding: 15% 0; }
 
 .page .work {
   padding: 0;
+  position: relative;
+  overflow: hidden;
   background-color: transparent; }
   .page .work input[type='radio'] {
     display: none; }
     .page .work input[type='radio'] + label {
-      display: inline-block;
-      color: #0032ff;
-      padding: 15px 30px;
-      border: 2px solid #0032ff; }
+      margin: 0 15px 15px;
+      cursor: pointer; }
     .page .work input[type='radio']:checked + label {
-      font-weight: 700;
       background-color: #0032ff;
       color: #ffffff; }
   .page .work #everything:checked ~ .project {
-    opacity: 1; }
+    opacity: 1;
+    position: static; }
   .page .work #ux:checked ~ .project:not(.ux) {
     opacity: 0;
-    max-height: 0;
-    margin: 0; }
+    position: absolute;
+    bottom: -99999px; }
   .page .work #branding:checked ~ .project:not(.branding) {
     opacity: 0;
-    max-height: 0;
-    margin: 0; }
+    position: absolute;
+    bottom: -99999px; }
   .page .work #side:checked ~ .project:not(.side) {
     opacity: 0;
-    max-height: 0;
-    margin: 0; }
+    position: absolute;
+    bottom: -99999px; }
   .page .work .project {
-    transition: max-height .2s ease-in-out .5s;
     position: relative;
     max-height: 100%;
     display: flex;
@@ -263,7 +264,7 @@ body {
 
 .contact .form__item {
   position: relative;
-  margin-bottom: -1px; }
+  margin-bottom: 15px; }
 
 .contact .form__label {
   position: absolute;
