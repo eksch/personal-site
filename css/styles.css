@@ -48,7 +48,7 @@ table {
 * {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  color: #585753; }
+  color: #2c2c2a; }
 
 a {
   position: relative;
@@ -92,7 +92,7 @@ p {
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 32px;
-  color: #585753; }
+  color: #2c2c2a; }
 
 h1 {
   margin-bottom: 30px;
@@ -107,7 +107,7 @@ h2 {
 h5, h6 {
   font-size: 13px;
   line-height: 18px;
-  color: #585753; }
+  color: #2c2c2a; }
 
 body {
   padding: 5% 10%; }
@@ -127,7 +127,7 @@ body {
     width: 32px;
     height: 32px; }
     .page .navigation__logo polygon {
-      fill: #585753; }
+      fill: #2c2c2a; }
     .page .navigation__logo:hover polygon {
       fill: #0032ff; }
   .page .navigation__link {
@@ -223,7 +223,7 @@ body {
 
 .project .project-details .project-info {
   margin-bottom: 30px;
-  color: #585753; }
+  color: #2c2c2a; }
 
 .project .project-details .image {
   text-align: center;
