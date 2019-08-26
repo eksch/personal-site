@@ -48,7 +48,7 @@ table {
 * {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  color: #35342f; }
+  color: #585753; }
 
 a {
   position: relative;
@@ -91,24 +91,23 @@ b {
 p {
   margin-bottom: 30px;
   font-size: 18px;
-  line-height: 32px; }
+  line-height: 32px;
+  color: #585753; }
 
 h1 {
   margin-bottom: 30px;
   font-size: 54px;
-  font-weight: 900;
-  line-height: 66px; }
+  line-height: 80px; }
 
 h2 {
   margin-bottom: 20px;
   font-size: 32px;
-  font-weight: 900;
   line-height: 44px; }
 
 h5, h6 {
   font-size: 13px;
   line-height: 18px;
-  color: #35342f; }
+  color: #585753; }
 
 body {
   padding: 5% 10%; }
@@ -128,7 +127,7 @@ body {
     width: 32px;
     height: 32px; }
     .page .navigation__logo polygon {
-      fill: #35342f; }
+      fill: #585753; }
     .page .navigation__logo:hover polygon {
       fill: #0032ff; }
   .page .navigation__link {
@@ -224,7 +223,7 @@ body {
 
 .project .project-details .project-info {
   margin-bottom: 30px;
-  color: #35342f; }
+  color: #585753; }
 
 .project .project-details .image {
   text-align: center;
