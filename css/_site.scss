@@ -71,11 +71,15 @@ $border-radius: 10px;
 //    line-height: 2rem;
     color: $gray-dark;
 }
-
+::selection {
+  background: $highlight; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $highlight; /* Gecko Browsers */
+}
 a {
     position: relative;
     color: $secondary;
-    font-weight: bold;
     text-decoration: none;
     line-height: inherit;
     
@@ -115,7 +119,7 @@ a {
     padding: 16px;
     display: inline-block;
     color: $secondary;
-    font-weight: 900;
+    font-weight: 400;
     &:hover {
         background-color: lighten($secondary,40%);
     }
@@ -146,4 +150,8 @@ h5, h6 {
     font-size: 13px;
     line-height: 18px;
     color: $gray-dark;
+}
+
+img {
+    border-radius: $border-radius;
 }

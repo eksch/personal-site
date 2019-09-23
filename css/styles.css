@@ -50,10 +50,17 @@ table {
   font-weight: 400;
   color: #2c2c2a; }
 
+::selection {
+  background: #ffff00;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #ffff00;
+  /* Gecko Browsers */ }
+
 a {
   position: relative;
   color: #0032ff;
-  font-weight: bold;
   text-decoration: none;
   line-height: inherit; }
   a:after {
@@ -81,7 +88,7 @@ a {
   padding: 16px;
   display: inline-block;
   color: #0032ff;
-  font-weight: 900; }
+  font-weight: 400; }
   .button:hover, .page .work input[type='radio'] + label:hover {
     background-color: #ccd6ff; }
 
@@ -109,6 +116,9 @@ h5, h6 {
   line-height: 18px;
   color: #2c2c2a; }
 
+img {
+  border-radius: 10px; }
+
 body {
   padding: 5% 10%; }
 
@@ -131,7 +141,7 @@ body {
     .page .navigation__logo:hover polygon {
       fill: #0032ff; }
   .page .navigation__link {
-    margin-left: 30px; }
+    margin-left: auto; }
     .page .navigation__link--active {
       color: #001466; }
       .page .navigation__link--active:after {
@@ -241,11 +251,11 @@ body {
     float: right;
     margin: 0 0 30px 30px; }
   .project .project-details .image img {
-    max-width: 100%;
-    border-radius: 10px; }
+    max-width: 100%; }
   .project .project-details .image figcaption {
     font-size: 12px;
-    color: #aaa; }
+    color: #aaa;
+    padding: 20px 0; }
 
 .project .project-details .top-margin {
   margin-top: 30px; }

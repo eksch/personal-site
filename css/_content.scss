@@ -28,7 +28,7 @@ body {
         }
         
         &__link {
-            margin-left: 30px;
+            margin-left: auto;
             
             &--active {
                 color: darken($secondary, 30%);
