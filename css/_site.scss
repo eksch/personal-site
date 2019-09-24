@@ -115,13 +115,13 @@ a {
     
 .button {
     @extend .transition;
-    border: 2px solid $secondary;
+    border: 3px solid $secondary;
     padding: 16px;
     display: inline-block;
     color: $secondary;
-    font-weight: 400;
+    font-weight: 900;
     &:hover {
-        background-color: lighten($secondary,40%);
+        background-color: $highlight;
     }
 }
 b {

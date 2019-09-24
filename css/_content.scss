@@ -28,12 +28,11 @@ body {
         }
         
         &__link {
-            margin-left: auto;
+            margin-left: 30px;
             
             &--active {
-                color: darken($secondary, 30%);
                 &:after {
-                    background-color: darken($secondary, 30%);
+                    background-color: $highlight;
                     width: 100%;
                 }
             }
