@@ -45,6 +45,15 @@ body {
         padding: 15% 0;
     }
     
+    .header {
+        @media (max-width: 768px) {
+            &__description {
+                font-size: 36px;
+                line-height: 52px;
+            }
+        }
+    }
+    
     .work {
         padding: 0;
         position: relative;
@@ -118,8 +127,6 @@ body {
                 max-height: 400px;
                 max-width: 600px;
             }
-            &__name {
-            }
             
             &__information {
                 padding: 5%;
@@ -127,19 +134,13 @@ body {
                 width: 80%;
                 flex-grow: 2;
             }
-            
-            &__type,
-            &__skills,
-            &__description {
-            }
-            
         }
+        
     }
     
     .contact {
         
         > div {
-            box-sizing: border-box;
             width: 50%;
             display: inline-block;
             float: left;
@@ -174,6 +175,18 @@ body {
             @extend .transition;
             margin: 10px 0 0;
             font-size: .8rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .page .work .project {
+        display: block;
+        margin-bottom: 100px;
+        &__image,
+        &__information {
+            width: 100%;
+            display: block;
         }
     }
 }

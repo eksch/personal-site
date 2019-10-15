@@ -26,6 +26,16 @@
                 margin: 0 0 30px 30px;
             }
             
+            @media (max-width: 768px) {
+                &__half,
+                &__third,
+                &__right {
+                    float: none;
+                    width: 100%;
+                    margin: 30px 0;
+                }
+            }
+            
             img {
                 max-width: 100%;
             }
@@ -54,6 +64,13 @@
         float: left;
         padding-right: 24px;
         box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+        &__section {
+            width: 100%;
+            display: block;
+            float: none;
+        }
     }
     .form {
         &__group{}
