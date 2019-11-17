@@ -207,7 +207,8 @@ body {
     .page .work .project__image {
       width: 60%; }
     .page .work .project__information {
-      padding-left: 5%; }
+      padding-left: 5%;
+      width: 40%; }
 .page .contact > div {
   width: 50%;
   display: inline-block;
