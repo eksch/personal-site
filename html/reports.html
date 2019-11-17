@@ -39,33 +39,72 @@
             <div class="page__section project-details">
                 <h1>Company reports</h1>
                 <!--<h5 class="project-info">Visual design, Iconography</h5>-->
-                <p>The scrap metal trade may seem like a niche industry, but it's a key component in recycling resources and transforming them into something new.</p>
+                <p>The scrap metal trade may seem like a niche industry, but it's key to recycling earth's resources and transforming them into something new.</p>
                 
-                <p>The basic concept: Someone has leftover metal from a product they've made, a scrapyard ships it to a buyer who can melt it down and use it for something else. It's a billion-dollar industry &mdash; that, unfortunately, is plagued with fraudsters who take advantage of humanity's need to recycle our resources.</p>
+                <p>The basic concept: Someone has leftover metal from a product they've made, a scrapyard ships it to a buyer who can melt it down and use it for something else. It's a billion-dollar industry &mdash; that, unfortunately, is plagued with fraudsters who take advantage of humanity's need to recycle.</p>
+                <h2>The problem</h2>
+                <p>How do these fraudsters operate? A few examples: they impersonate reputable individuals, fabricate business histories to trick real professionals into paying them for scrap that doesn't exist, or ship them literal mud instead of what they paid for.</p>
+                <p>Scrap Connection (now <a href="https://tradefox.co/" targe="_blank">Tradefox</a>) aims to take on these bad actors by bringing transparency to the industry. We gathered publicly available data from disparate sources, to begin to uncover a story of how trustworthy a company is based on past behavior.</p>
+
+                <p>But, while gathering data can be done programatically, analyzing and presenting the data in a meaningful way for the myriad of companies and business practices in the industry was a challenge.</p>
+                
+                <h2>Building a useful report</h2>
+                
+                <p>I took the initial idea of collating data into reports manually and built a scalable, automated, always-up-to-date company profile that can be accessed by anyone who needed to verify a trade partner.</p>
                 
                 <figure class="image image__half">
                     <img src="../images/reports_elements.png" />
                     <figcaption>Some elements of the reports</figcaption>
                 </figure>
                 
-                <h2>Addressing the problem</h2>
-                <p>How do these fraudsters operate? One example: they like to impersonate reputable individuals, or fabricate business histories to trick real professionals into paying them for scrap that doesn't exist.</p>
-                <p>Scrap Connection (now <a href="https://tradefox.co/" targe="_blank">Tradefox</a>) aims to take on these bad actors by bringing transparency to the industry. By gathering publicly available data from disparate sources, they were able to uncover a story of how trustworthy a company is based on past behavior.</p>
+                <p>This required an understanding of the multiple data sources we had uncovered. Most are publicly available, via various countries' customs databases, but the data is not standardized. I worked with the development team to clean it up for the admin interface, where we could automatically or manually assign trades to known companies, or create new ones. This helped us verify which companies were actually conducting business in the industry.</p>
                 
-
-                <p>But, while gathering data can be done programatically, they were struggling to analyze and organize the data in a meaningful way for the myriad of companies and business practices in the industry.</p>
+                <p>In this process, we realized that if the sheer volume of data was daunting to us, even if we organized and presented it as nicely as possible on each company profile, it was still <i>a lot</i> of data. How do you know what to look for in each profile, if you're looking for that one detail that makes you wonder if the company is legit? So, we enlisted the help of a data scientist to develop an algorithm that scores each company, based on all the qualitative and quantitative data we had on them. We called it the "Tradefox Trust Score".</p>
                 
-                <p>I was asked to take the initial idea of collating this data and build it into a scalable, automated, always-up-to-date report that could be accessed by anyone who needed to verify trade partners.</p>
+                <h2>Creating the industry's only review system</h2>
                 
-                <p>To search for the reports, they can search by name, or choose what they're looking for in a company to help them narrow down trade partners that fit their criteria.</p>
+                <p>Organizing the trades in this way allowed us to build out a <b>review system</b> for the trades. This is something that no other credit report product in the scrap industry has &mdash; a <i>qualitative</i> view of a company's operations. All <i>quantitative</i> information on a company can easily be fabricated or impersonated, but getting real reviews was what would make a difference in helping uncover bad actors.</p>
+                
+                <figure class="image image__full">
+                    <img src="../images/reports_tradepage.png" />
+                    <figcaption>Example of trade data supplemented with user-submitted reviews</figcaption>
+                </figure>
+                
+                
+                <h2>Helping users discover new trading partners</h2>
+                
+                <p>Much of the discovery process in the scrap trade is by word-of-mouth. It can be difficult and time-consuming to find someone who needs what you're selling, or vice versa. We now had that data that allowed building out a search experience that facilitated discovery.</p>
+                
+                <p>Many times, traders will want to search for a specific location based on how good the prices are for their material there. There are also several industry organizations that require certain standards to be met for membership, so filtering on those is a must-have as well.</p>
+                
+                <p>The key here is that <b>they won't know the name of the company they need</b>, and that's where our search stands out. You can search for everything but the name to get a shortlist of potential partners, and investigate their reputations from there. A much shorter process than relying on word-of-mouth.</p>
+                <figure class="image image__full">
+                    <img src="../images/reports-searchresults.png" />
+                    <figcaption>Search results</figcaption>
+                </figure>
+                
+                 <figure class="image image__full">
+                    <img src="../images/reports-searchfilters.png" />
+                    <figcaption>Search filters</figcaption>
+                </figure>
                 
                 <figure class="image image__full">
                     <img src="../images/reports_dashboard.png" />
+                    <figcaption>Desktop and mobile views of the dashboard and search</figcaption>
+                </figure>
+                
+                
+                <h2>The use case for mobile</h2>
+                
+                <p>Oftentimes, a trader will be out in the field, inspecting product, overseeing shipment, or meeting potential trade partners. To help facilitate this, Tradefox is fully responsive, and we developed an app as well.</p>
+                
+                <figure class="image image__full">
+                    <img src="../images/reports-mobile-full.png" />
                     <figcaption>A fully responsive digital product (and an app!)</figcaption>
                 </figure>
                 
+                
                 <p>You can check out a publicly searchable version of the reports on the <a href="https://tradefox.co/search?utf8=%E2%9C%93&search=" target="_blank">Tradefox website</a>.</p>
-                <p></p>
             </div>
             
             <div id="contact" class="page__section contact">
