@@ -38,7 +38,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.transition, a:after, .button, .page .work input[type='radio'] + label, .page .work .project, .page .work .project__image, .page .contact .icon svg, .page .contact .footer-text, .contact .form__field {
+.transition, a:after, .button, .page .work .project, .page .work .project__image, .page .contact .icon svg, .page .contact .footer-text, .contact .form__field {
   transition: all .2s ease; }
 
 .clearfix:after, .page__section:after, .page .work .project:after {
@@ -84,13 +84,13 @@ a {
       background-color: #001466;
       width: 100%; }
 
-.button, .page .work input[type='radio'] + label {
+.button {
   border: 3px solid #0032ff;
   padding: 16px;
   display: inline-block;
   color: #0032ff;
   font-weight: 900; }
-  .button:hover, .page .work input[type='radio'] + label:hover {
+  .button:hover {
     background-color: #ffff00; }
 
 b {
@@ -121,7 +121,7 @@ img {
   border-radius: 10px; }
 
 body {
-  padding: 5% 10%; }
+  padding: 5%; }
 
 .page .navigation {
   position: fixed;
@@ -134,7 +134,7 @@ body {
       justify-content: space-between;
   top: 0;
   z-index: 1;
-  width: 80%;
+  width: 90%;
   padding: 20px 0 10px;
   background-color: white; }
   .page .navigation__logo {
@@ -164,14 +164,17 @@ body {
   .page .work input[type='radio'] {
     display: none; }
     .page .work input[type='radio'] + label {
-      margin: 0 15px 15px;
+      display: inline-block;
+      width: 32%;
+      margin-bottom: 5%;
+      padding: 0 15px 15px;
+      color: #aaa;
+      border-bottom: 8px solid #aaa;
       cursor: pointer; }
     .page .work input[type='radio']:checked + label {
-      background-color: #0032ff;
-      color: #ffffff; }
-  .page .work #everything:checked ~ .project {
-    opacity: 1;
-    position: static; }
+      font-weight: 700;
+      border-color: #0032ff;
+      color: #0032ff; }
   .page .work #ux:checked ~ .project:not(.ux) {
     opacity: 0;
     position: absolute;
@@ -193,8 +196,8 @@ body {
         flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -ms-flex-align: start;
-        align-items: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
     box-sizing: border-box;
@@ -202,17 +205,9 @@ body {
     margin-bottom: 10%;
     background-color: #ffffff; }
     .page .work .project__image {
-      width: 100%;
-      min-height: 66px;
-      min-width: 100px;
-      max-height: 400px;
-      max-width: 600px; }
+      width: 60%; }
     .page .work .project__information {
-      padding: 5%;
-      vertical-align: middle;
-      width: 80%;
-      -ms-flex-positive: 2;
-          flex-grow: 2; }
+      padding-left: 5%; }
 .page .contact > div {
   width: 50%;
   display: inline-block;
