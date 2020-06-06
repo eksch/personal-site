@@ -29,6 +29,17 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 300;
+}
+
+p, a, b, blockquote, pre, abbr, acronym, address, button, cite, code {
+    font-family: 'Neuton', serif;
+    font-weight: 300;
+}
+
 blockquote, q {
     quotes: none;
 }
@@ -45,15 +56,16 @@ table {
 ///////////////////////
 // variables & bases //
 ///////////////////////
+$white: #ffffff;
 $primary: #ffffff;
-$secondary: #0032ff;
-$gray-dark: #2c2c2a;
+$secondary: #457b9d;
+$gray-dark: #1d3557;
 $gray-mid: #aaa;
 $gray-light: #f1f2f0;
-$highlight: #ffff00;
+$highlight: #a8dadc;
 $border-radius: 10px;
 
-.transition { transition: all .2s ease; }
+.transition { transition: all .4s ease; }
 
 .clearfix {
     &:after {
@@ -64,8 +76,6 @@ $border-radius: 10px;
 }
 
 * {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
 //    line-height: 2rem;
     color: $gray-dark;
 }
@@ -78,6 +88,7 @@ $border-radius: 10px;
 a {
     position: relative;
     color: $secondary;
+    font-weight: 700;
     text-decoration: none;
     line-height: inherit;
     
@@ -85,7 +96,7 @@ a {
         @extend .transition;
         content: '';
         background-color: $highlight;
-        height: 11px;
+        height: 50%;
         width: 0;
         position: absolute;
         bottom: 0;
@@ -97,7 +108,7 @@ a {
         text-decoration: none;
         
         &:after {
-            width: 105%;
+            width: 103%;
         }
     }
     &:active, &:focus {
@@ -113,23 +124,24 @@ a {
     
 .button {
     @extend .transition;
-    border: 3px solid $secondary;
+    border: 2px solid $secondary;
     padding: 16px;
     display: inline-block;
     color: $secondary;
-    font-weight: 900;
+    cursor: pointer;
+    font-weight: 700;
     &:hover {
         background-color: $highlight;
     }
 }
 b {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 p, ol, ul {
     margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 34px;
     color: $gray-dark;
 }
 
@@ -137,11 +149,13 @@ h1 {
     margin-bottom: 30px;
     font-size: 54px;
     line-height: 80px;
+    font-weight: 700;
 }
 h2 {
     margin-bottom: 20px;
     font-size: 32px;
     line-height: 44px;
+    font-weight: 700;
 }
 
 h5, h6 {
@@ -151,5 +165,4 @@ h5, h6 {
 }
 
 img {
-    border-radius: $border-radius;
 }

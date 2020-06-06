@@ -1,10 +1,21 @@
-.project {
-    
-    .project-details {
+.page--project {
+     
+    .page__section.project-details {
+        padding: 10% 0;
         
-        .project-info {
-            margin-bottom: 30px;
-            color: $gray-dark;
+        p, h1, h2, h3 {
+            padding: 0 15%;
+        }   
+        @media (max-width: 768px) {
+            p, h1, h2, h3 {
+                padding: 0;
+            }
+        }
+        
+        .self {
+            width: 25%;
+            padding-right: 15%;
+            img { border-radius: 200px; }
         }
         
         .image {
@@ -17,14 +28,15 @@
                 float: none;
             }
             &__half {
-                width: 50%;
-                margin: 0 30px 30px 0;
+                width: 49%;
+                margin: 0 1% 1% 0;
             }
             &__third { width: 33%; }
             &--right {
                 float: right;
-                margin: 0 0 30px 30px;
+                margin: 0 0 1% 1%;
             }
+            
             
             @media (max-width: 768px) {
                 &__half,
@@ -32,7 +44,10 @@
                 &__right {
                     float: none;
                     width: 100%;
-                    margin: 30px 0;
+                    margin: 1% 0;
+                }
+                &.self {
+                    width: 50%;
                 }
             }
             
@@ -40,7 +55,7 @@
                 max-width: 100%;
             }
             figcaption {
-                font-size: 12px;
+                font-size: 14px;
                 color: $gray-mid;
                 padding: 20px 0;
             }
@@ -55,50 +70,6 @@
             font-size: 18px;
             line-height: 2rem;
             margin: 30px 0;
-        }
-    }
-}
-.contact {
-    &__section {
-        width: 50%;
-        float: left;
-        padding-right: 24px;
-        box-sizing: border-box;
-    }
-    @media (max-width: 768px) {
-        &__section {
-            width: 100%;
-            display: block;
-            float: none;
-        }
-    }
-    .form {
-        &__group{}
-        &__item {
-            position: relative;
-            margin-bottom: 15px;
-        }
-        &__label {
-            position: absolute;
-            top: 12px;
-            left: 16px;
-            font-size: 12px;
-            color: $gray-mid;
-        }
-        &__field {
-            @extend .transition;
-            border: 1px solid $gray-mid;
-            padding: 32px 16px 16px;
-            width: 100%;
-            font-size: 16px;
-            
-            &:focus {
-                outline: 0;
-                border-color: $secondary;
-                ~ label {
-                    color: $secondary;
-                }
-            }
         }
     }
 }

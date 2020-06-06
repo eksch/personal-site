@@ -1,7 +1,9 @@
 module.exports = function (grunt) {
     
+    
     "use strict";
     require('load-grunt-tasks')(grunt);
+    
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -29,6 +31,7 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.registerTask('default', []);
     grunt.registerTask('build-sass', ['sass', 'autoprefixer']);
     grunt.registerTask('watch-sass', ['watch']);
